@@ -1,0 +1,4 @@
+name = XDebug redirect
+description = Rewritting location header when debugging through ssh.
+core = 7.x
+package = Development

@@ -1,0 +1,9 @@
+<?php
+/**
+ * Implements hook_drupal_goto_alter().
+ */
+function xdebug_redirect_drupal_goto_alter(&$path, &$options, &$http_response_code) {
+  if (isset($_COOKIE['XDEBUG_SESSION'])) {
+    $path = $_COOKIE['XDEBUG_SESSION'] . '/' . $path;
+  }
+}
